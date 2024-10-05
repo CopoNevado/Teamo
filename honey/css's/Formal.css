@@ -21,7 +21,7 @@
     align-items: center;
     height: 100vh;
     background-color: #ab9f81;
-    background-image: url(/images/fib.jpeg);
+    background-image: url(../images/fib.jpeg);
   }
   
   .contenedor {
