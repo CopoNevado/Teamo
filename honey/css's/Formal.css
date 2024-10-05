@@ -1,0 +1,66 @@
+/*@keyframes mover {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(300px);
+    }
+  }*/
+  
+  /* Aplicar la animación al elemento */
+  .animacion {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    animation: mover 2s infinite alternate;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ab9f81;
+    background-image: url(/images/fib.jpeg);
+  }
+  
+  .contenedor {
+    position: relative;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .imagen {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  /* Aumentar el tamaño y añadir sombra cuando el cursor está sobre la imagen */
+  .contenedor:hover .imagen {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Estilo para la descripción que aparece en hover */
+  .descripcion {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+    color: white;
+    font-size: 16px;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Mostrar la descripción cuando el cursor está sobre el contenedor */
+  .contenedor:hover .descripcion {
+    opacity: 1;
+  }
+  

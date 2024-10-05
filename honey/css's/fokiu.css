@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  .imagen{
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 1500px;
+    height: 1000;
+ /* Asegura que la imagen permanezca fija */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca la imagen detrás de todo el contenido */
+  }
+  
